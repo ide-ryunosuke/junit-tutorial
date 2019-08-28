@@ -18,9 +18,9 @@ public class CalculatorTest {
 	@Test
 	public void multiplyTest2() {
 		Calculator calc = new Calculator();
-		int expected = 12;
-		int actual = calc.multiply(4, 5);
-		assertThat(actual, is(expected));
+		int expected = 56;
+		int actual = calc.multiply(8, 7);
+		assertEquals(expected, actual);
 	}
 	
 	@Test
@@ -30,5 +30,4 @@ public class CalculatorTest {
 		int actual = calc.divide(12, 4);
 		assertThat(actual, is(expected));
 	}
-
 }
